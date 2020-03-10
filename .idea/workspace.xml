@@ -68,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583844001359</updated>
-      <workItem from="1583844002512" duration="3369000" />
+      <workItem from="1583844002512" duration="5910000" />
     </task>
     <servers />
   </component>
@@ -87,6 +87,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Machine_Learnig_Project$Asteroids.coverage" NAME="Asteroids Coverage Results" MODIFIED="1583847372918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled" />
+    <SUITE FILE_PATH="coverage/Machine_Learnig_Project$Asteroids.coverage" NAME="Asteroids Coverage Results" MODIFIED="1583852533477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled" />
   </component>
 </project>
