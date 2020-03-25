@@ -1,8 +1,11 @@
+import pandas as pd
 import pygame
 import random
 import math
+from openpyxl import Workbook
 
 pygame.init()
+
 
 screen = pygame.display.set_mode((800, 600))
 
@@ -10,7 +13,7 @@ screen = pygame.display.set_mode((800, 600))
 asteroidImag = pygame.image.load('meteor.png')
 asteroidX = random.randint(0, 800)
 asteroidY = random.randint(50, 150)
-asteroid_movement = 0.05
+asteroid_movement = 1
 
 # Player
 shipImag = pygame.image.load('battleship.png')
@@ -34,11 +37,25 @@ def collision(bombX, bombY, asteroidX, asteroidY):
 
 def shipDistance(shipX, asteroidX):
     distance = math.fabs(asteroidX - shipX)
-    print(distance)
     if distance < 20:
         return True
     else:
         return False
+
+
+wb = Workbook()
+workSheet = wb.active
+workSheet.title = "Data"
+workSheet['A1'] = "BombX"
+workSheet['B1'] = "ShipX"
+workSheet['C1'] = "AsteroidX"
+workSheet['D1'] = "AsteroidY"
+workSheet['E1'] = "Movement Input"
+
+
+def record_data(position):
+    workSheet.append([bombX, shipX, asteroidX, asteroidY, position])
+    return position
 
 
 def ship(x, y):
@@ -61,30 +78,24 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    # if event.type == pygame.KEYDOWN:
-    #     if event.key == pygame.K_LEFT:
-    #         shipX_movement = -0.3
-    #    if event.key == pygame.K_RIGHT:
-    #         shipX_movement = 0.3
-    #     if event.key == pygame.K_SPACE:
-    #         bombX = shipX
-
     Distance = shipDistance(shipX, asteroidX)
     if Distance:
         bombX = asteroidX
 
     if bombX == asteroidX:
         if asteroidX > 400:
-            shipX_movement = -0.3
+            shipX_movement = -1
+            record_data(1)
 
         elif asteroidX <= 400:
-            shipX_movement = 0.3
+            record_data(0)
+            shipX_movement = 1
         shipX += shipX_movement
     elif bombX != asteroidX:
         if shipX > asteroidX:
-            shipX_movement = -0.3
+            shipX_movement = -1
         else:
-            shipX_movement = 0.3
+            shipX_movement = 1
         shipX += shipX_movement
 
     Collided = collision(bombX, bombY, asteroidX, asteroidY)
@@ -109,4 +120,5 @@ while running:
     bomb(bombX, bombY)
     asteroid(asteroidX, asteroidY)
     ship(shipX, shipY)
+    wb.save("Data.xlsx")
     pygame.display.update()
