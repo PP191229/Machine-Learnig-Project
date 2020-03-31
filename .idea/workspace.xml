@@ -29,7 +29,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/untitled/Asteroids.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.AI SpreadSheet">
+  <component name="RunManager" selected="Python.ML">
     <configuration name="AI SpreadSheet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Machine-Learnig-Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,8 +74,53 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ML" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Machine-Learnig-Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/untitled" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/untitled/ML.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Machine-Learnig-Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ML" />
         <item itemvalue="Python.AI SpreadSheet" />
         <item itemvalue="Python.Asteroids" />
       </list>
@@ -98,7 +143,11 @@
       <workItem from="1584965192050" duration="4529000" />
       <workItem from="1585051133477" duration="4608000" />
       <workItem from="1585065246929" duration="2484000" />
-      <workItem from="1585126404693" duration="8951000" />
+      <workItem from="1585126404693" duration="9612000" />
+      <workItem from="1585399679254" duration="599000" />
+      <workItem from="1585534224024" duration="610000" />
+      <workItem from="1585566508388" duration="10738000" />
+      <workItem from="1585666628918" duration="4493000" />
     </task>
     <servers />
   </component>
@@ -123,37 +172,42 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160/-3840.0.1536.824@0.0.1920.1160" timestamp="1584711079288" />
+    <state x="703" y="383" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585589840138">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="703" y="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160/-3840.0.1536.824@0.0.1920.1160" timestamp="1585589840138" />
     <state x="740" y="335" key="FileChooserDialogImpl" timestamp="1584706771646">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="335" key="FileChooserDialogImpl/0.0.1920.1160/-3840.0.1536.824@0.0.1920.1160" timestamp="1584706771646" />
-    <state width="1877" height="321" key="GridCell.Tab.0.bottom" timestamp="1585138201805">
+    <state width="1877" height="321" key="GridCell.Tab.0.bottom" timestamp="1585676264589">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1160/-3840.0.1536.824@0.0.1920.1160" timestamp="1585138201805" />
-    <state width="1877" height="321" key="GridCell.Tab.0.center" timestamp="1585138201805">
+    <state width="1877" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1160/-3840.0.1536.824@0.0.1920.1160" timestamp="1585676264589" />
+    <state width="1877" height="321" key="GridCell.Tab.0.center" timestamp="1585676264588">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.0.center/0.0.1920.1160/-3840.0.1536.824@0.0.1920.1160" timestamp="1585138201805" />
-    <state width="1877" height="321" key="GridCell.Tab.0.left" timestamp="1585138201805">
+    <state width="1877" height="321" key="GridCell.Tab.0.center/0.0.1920.1160/-3840.0.1536.824@0.0.1920.1160" timestamp="1585676264588" />
+    <state width="1877" height="321" key="GridCell.Tab.0.left" timestamp="1585676264587">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.0.left/0.0.1920.1160/-3840.0.1536.824@0.0.1920.1160" timestamp="1585138201805" />
-    <state width="1877" height="321" key="GridCell.Tab.0.right" timestamp="1585138201805">
+    <state width="1877" height="321" key="GridCell.Tab.0.left/0.0.1920.1160/-3840.0.1536.824@0.0.1920.1160" timestamp="1585676264587" />
+    <state width="1877" height="321" key="GridCell.Tab.0.right" timestamp="1585676264589">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.0.right/0.0.1920.1160/-3840.0.1536.824@0.0.1920.1160" timestamp="1585138201805" />
+    <state width="1877" height="321" key="GridCell.Tab.0.right/0.0.1920.1160/-3840.0.1536.824@0.0.1920.1160" timestamp="1585676264589" />
     <state x="461" y="222" key="SettingsEditor" timestamp="1584711117085">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="461" y="222" key="SettingsEditor/0.0.1920.1160/-3840.0.1536.824@0.0.1920.1160" timestamp="1584711117085" />
-    <state x="656" y="404" key="com.intellij.ide.util.TipDialog" timestamp="1585126417253">
+    <state x="656" y="404" key="com.intellij.ide.util.TipDialog" timestamp="1585666628320">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="656" y="404" key="com.intellij.ide.util.TipDialog/0.0.1920.1160/-3840.0.1536.824@0.0.1920.1160" timestamp="1585126417253" />
+    <state x="656" y="404" key="com.intellij.ide.util.TipDialog/0.0.1920.1160/-3840.0.1536.824@0.0.1920.1160" timestamp="1585666628320" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Machine_Learnig_Project$Asteroids.coverage" NAME="Asteroids Coverage Results" MODIFIED="1584967017586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled" />
-    <SUITE FILE_PATH="coverage/Machine_Learnig_Project$AI_SpreadSheet.coverage" NAME="AI SpreadSheet Coverage Results" MODIFIED="1585138201773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled" />
+    <SUITE FILE_PATH="coverage/Machine_Learnig_Project$AI_SpreadSheet.coverage" NAME="AI SpreadSheet Coverage Results" MODIFIED="1585534230012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled" />
+    <SUITE FILE_PATH="coverage/Machine_Learnig_Project$ML.coverage" NAME="ML Coverage Results" MODIFIED="1585674842021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/untitled" />
   </component>
 </project>
