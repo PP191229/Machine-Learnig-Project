@@ -1,9 +1,9 @@
+import keyboard
 import pygame
 import random
 import math
 import joblib
 from sklearn.svm import SVC
-
 
 pygame.init()
 
@@ -37,7 +37,7 @@ def collision(bombX, bombY, asteroidX, asteroidY):
 
 def shipDistance(shipX, asteroidX):
     distance = math.fabs(asteroidX - shipX)
-    print(distance)
+    # print(distance)
     if distance < 20:
         return True
     else:
@@ -56,8 +56,10 @@ def bomb(x, y):
     screen.blit(bombImag, (x, y))
 
 
+# predict_data = range(0, 1)
+
+elements = [shipX, asteroidX, asteroidY, bombX]
 predictor = joblib.load('trained_model.pkl')
-predicted_value = predictor.predict('')
 
 bombIsPlanted = True
 
@@ -65,6 +67,8 @@ running = True
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
+            running = False
+        if event.type == pygame.KEYDOWN:
             running = False
 
     # if event.type == pygame.KEYDOWN:
@@ -74,22 +78,26 @@ while running:
     #         shipX_movement = 0.3
     #     if event.key == pygame.K_SPACE:
     #         bombX = shipX
-
+    predicted_value = predictor.predict([elements])
     Distance = shipDistance(shipX, asteroidX)
     if Distance:
         bombX = asteroidX
-
+    # key code left = 27, right = 26
     if bombX == asteroidX:
-        if asteroidX > 400:
+        if predicted_value == 1:
+            keyboard.press(27)
+            print('Left')
             shipX_movement = -0.3
 
-        elif asteroidX <= 400:
+        elif predicted_value == 0:
+            keyboard.press(26)
+            print('Right')
             shipX_movement = 0.3
         shipX += shipX_movement
     elif bombX != asteroidX:
-        if shipX > asteroidX:
+        if predicted_value == 0:
             shipX_movement = -0.3
-        else:
+        elif predicted_value == 1:
             shipX_movement = 0.3
         shipX += shipX_movement
 

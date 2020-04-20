@@ -8,18 +8,19 @@ df = pandas.read_csv(r'D:\Machine Learning python\Machine-Learnig-Project\untitl
 df.shape
 df.head()
 
-# axis 1 = columns, axis 0 = row
+
 X = df.drop('Movement Input', axis=1)
 Y = df['Movement Input']
 
-X_train, X_test, Y_train, y_test = train_test_split(X, Y, test_size=0.2)
+x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.2)
 
 svc = SVC(kernel='linear')
 
-svc.fit(X_train, Y_train)
+svc.fit(x_train, y_train)
 
-y_pred = svc.predict(X_test)
+y_pred = svc.predict(x_test)
 
-acc = metrics.accuracy_score(y_test, y_pred)
-print(acc)
-joblib.dump(svc, 'trained_model.pkl')
+joblib.dump(svc, open('trained_model.pkl', 'wb'))
+svmModel = joblib.load(open('trained_model.pkl', 'rb'))
+SVM_results = svmModel.score(x_test, y_test)
+print(SVM_results)
