@@ -4,8 +4,7 @@ from sklearn import metrics
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 
-df = pandas.read_csv(r'D:\Machine Learning python\Machine-Learnig-Project\untitled\Data.csv')
-df.shape
+df = pandas.read_csv(r'D:\Machine Learning python\Machine-Learnig-Project\untitled\Data2.csv')
 df.head()
 
 
@@ -20,7 +19,7 @@ svc.fit(x_train, y_train)
 
 y_pred = svc.predict(x_test)
 
-joblib.dump(svc, open('trained_model.pkl', 'wb'))
-svmModel = joblib.load(open('trained_model.pkl', 'rb'))
+joblib.dump(svc, open('trained_model2.pkl', 'wb'))
+svmModel = joblib.load(open('trained_model2.pkl', 'rb'))
 SVM_results = svmModel.score(x_test, y_test)
 print(SVM_results)

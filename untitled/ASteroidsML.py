@@ -58,7 +58,6 @@ def bomb(x, y):
 
 # predict_data = range(0, 1)
 
-elements = [shipX, asteroidX, asteroidY, bombX]
 predictor = joblib.load('trained_model.pkl')
 
 bombIsPlanted = True
@@ -78,6 +77,7 @@ while running:
     #         shipX_movement = 0.3
     #     if event.key == pygame.K_SPACE:
     #         bombX = shipX
+    elements = [shipX, asteroidX, asteroidY, bombX]
     predicted_value = predictor.predict([elements])
     Distance = shipDistance(shipX, asteroidX)
     if Distance:

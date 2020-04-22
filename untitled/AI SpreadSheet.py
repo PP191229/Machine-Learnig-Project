@@ -94,8 +94,10 @@ while running:
     elif bombX != asteroidX:
         if shipX > asteroidX:
             shipX_movement = -1
+            record_data(1)
         else:
             shipX_movement = 1
+            record_data(0)
         shipX += shipX_movement
 
     Collided = collision(bombX, bombY, asteroidX, asteroidY)
@@ -120,5 +122,5 @@ while running:
     bomb(bombX, bombY)
     asteroid(asteroidX, asteroidY)
     ship(shipX, shipY)
-    wb.save("Data.xlsx")
+    wb.save("Data2.xlsx")
     pygame.display.update()
